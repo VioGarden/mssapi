@@ -3,6 +3,7 @@ from rest_framework.reverse import reverse
 from .models import Songs
 # from .validators import validate
 
+
 class SongSerializer(serializers.ModelSerializer):
     edit_url = serializers.SerializerMethodField(read_only=True)
     delete_url = serializers.SerializerMethodField(read_only=True)
